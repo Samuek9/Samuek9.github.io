@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samuel Vásquez | Portafolio</title>
+<meta name="description" content="Portafolio de Samuel Vásquez Muñoz: fundador de miCANTERA, automatización con n8n, operaciones y proyectos de software.">
+<meta property="og:title" content="Samuel Vásquez | Portafolio">
+<meta property="og:description" content="Fundador de miCANTERA. Automatización con n8n, operaciones y proyectos de software.">
+<style>
+:root{--bg:#f7f9fa;--card:#fff;--ink:#303943;--navy:#18344d;--teal:#27817d;--grey:#737d87;--line:#dde3e8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a24;--card:#16232f;--ink:#d6dde3;--navy:#e8eef3;--teal:#4fb8b2;--grey:#8c98a3;--line:#26364a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 32px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.kicker{color:var(--teal);font-weight:700;letter-spacing:.08em;font-size:13px;text-transform:uppercase}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer;font:inherit;font-size:14px}
+h1{color:var(--navy);font-size:clamp(32px,6vw,48px);line-height:1.1;margin:12px 0 8px}
+.lead{font-size:18px;max-width:680px;margin:0 0 20px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:9px 16px;border-radius:8px;border:1px solid var(--teal);text-decoration:none;font-weight:600;font-size:15px}
+.btn.main{background:var(--teal);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:28px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font-size:26px;color:var(--navy);line-height:1.2}
+.stat span{color:var(--grey);font-size:14px}
+h2{color:var(--navy);font-size:22px;margin:44px 0 6px;padding-bottom:6px;border-bottom:2px solid var(--teal);display:inline-block}
+.sub{color:var(--grey);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:auto;display:block;border-bottom:1px solid var(--line)}
+.body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{margin:0;color:var(--navy);font-size:18px}
+.card p{margin:0;font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--grey)}
+.cl{display:flex;flex-wrap:wrap;gap:12px;font-size:14px;font-weight:600}
+.note{font-size:13px;color:var(--grey)}
+.feature{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:760px){.feature{grid-template-columns:1.1fr 1fr}.feature img{border-bottom:0;border-left:1px solid var(--line);order:2;height:100%;object-fit:cover}}
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.tl li{padding:0 0 16px 18px;position:relative}
+.tl li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--teal)}
+.tl b{color:var(--navy)}
+.tl small{display:block;color:var(--grey)}
+footer{margin:56px 0 40px;padding-top:20px;border-top:1px solid var(--line);color:var(--grey);font-size:14px}
+[data-en]{display:none}
+html[lang=en] [data-es]{display:none}
+html[lang=en] [data-en]{display:revert}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="top">
+    <span class="kicker"><span data-es>Portafolio</span><span data-en>Portfolio</span></span>
+    <button class="lang" id="lang" aria-label="Idioma / Language">EN</button>
+  </div>
+  <h1>Samuel Vásquez Muñoz</h1>
+  <p class="lead">
+    <span data-es>Fundador de miCANTERA. Automatizo cobros, seguimiento de clientes y soporte con n8n, APIs, WhatsApp e IA. Ingeniero administrativo (UPB) con plan académico finalizado en noviembre de 2026.</span>
+    <span data-en>Founder of miCANTERA. I automate payments, lead follow-up and support with n8n, APIs, WhatsApp and AI. Management Engineering (UPB), coursework completed November 2026.</span>
+  </p>
+  <div class="links">
+    <a class="btn main" href="mailto:samuelvasquez0804@gmail.com"><span data-es>Escríbeme</span><span data-en>Contact me</span></a>
+    <a class="btn" href="https://linkedin.com/in/samuelalexis09">LinkedIn</a>
+    <a class="btn" href="https://github.com/Samuek9">GitHub</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>100+</b><span data-es>clubes registrados en miCANTERA</span><span data-en>clubs registered on miCANTERA</span></div>
+    <div class="stat"><b>2.000+</b><span data-es>deportistas en la plataforma</span><span data-en>athletes on the platform</span></div>
+    <div class="stat"><b>18</b><span data-es>flujos de n8n en producción</span><span data-en>n8n workflows in production</span></div>
+    <div class="stat"><b>1.000+</b><span data-es>pedidos procesados en Trenbros</span><span data-en>orders processed at Trenbros</span></div>
+  </div>
+</header>
+
+<main>
+<h2><span data-es>Proyecto principal</span><span data-en>Main project</span></h2>
+<p class="sub"><span data-es>Lo que construyo y opero todos los días.</span><span data-en>What I build and run every day.</span></p>
+<article class="card">
+  <div class="body">
+    <h3>miCANTERA</h3>
+    <p data-es>Plataforma para la gestión de clubes y academias deportivas amateur: jugadores, cobros, entrenamientos y partidos en un solo lugar, con un asistente de IA que trabaja por el administrador. Fundador, producto, ventas y soporte.</p>
+    <p data-en>Platform for amateur sports clubs and academies: players, payments, training and matches in one place, with an AI assistant that does admin work for the club manager. Founder: product, sales and support.</p>
+    <p data-es>Incluye cobro con la pasarela propia de cada club (Wompi), recordatorios por WhatsApp, conciliación de comprobantes con IA y automatizaciones con n8n.</p>
+    <p data-en>Includes payments through each club's own gateway (Wompi), WhatsApp reminders, AI-assisted receipt reconciliation and n8n automations.</p>
+    <div class="tags"><span class="tag">Django</span><span class="tag">React</span><span class="tag">n8n</span><span class="tag">WhatsApp</span><span class="tag">OpenAI</span><span class="tag">Wompi</span></div>
+    <div class="cl"><a href="https://micantera.com">micantera.com</a><span class="note"><span data-es>Código privado</span><span data-en>Private code</span></span></div>
+  </div>
+</article>
+
+<h2><span data-es>Automatización y servicios</span><span data-en>Automation and services</span></h2>
+<p class="sub"><span data-es>Servicios que ofrezco en Upwork. Las imágenes son ejemplos con negocios ficticios.</span><span data-en>Services I offer on Upwork. Images are examples with fictional businesses.</span></p>
+<div class="grid">
+  <article class="card">
+    <img src="img/whatsapp-leads.png" alt="Seguimiento automático de leads de WhatsApp" loading="lazy">
+    <div class="body">
+      <h3><span data-es>Seguimiento automático de leads por WhatsApp</span><span data-en>Automatic WhatsApp lead follow-up</span></h3>
+      <p data-es>Flujo en n8n que responde cada lead nuevo, lo guarda en el CRM y le hace seguimiento cuando deja de contestar.</p>
+      <p data-en>An n8n workflow that answers every new lead, saves it in the CRM and follows up when they go quiet.</p>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp</span><span class="tag">CRM</span></div>
+    </div>
+  </article>
+  <article class="card">
+    <img src="img/lead-qualification.png" alt="Flujo de calificación de leads con IA en n8n" loading="lazy">
+    <div class="body">
+      <h3><span data-es>Calificación de leads con IA</span><span data-en>AI lead qualification</span></h3>
+      <p data-es>El lead llega por webhook, se limpia, Claude lo puntúa de 0 a 100 y el flujo lo clasifica en caliente, tibio, frío o spam. Si la IA falla, entran reglas simples y queda marcado para revisión humana.</p>
+      <p data-en>A lead hits a webhook, gets cleaned, Claude scores it 0 to 100, and the flow sorts it hot, warm, cold or spam. If the AI call fails, simple rules take over and the lead is flagged for human review.</p>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">Claude</span><span class="tag">Slack</span><span class="tag">Google Sheets</span></div>
+    </div>
+  </article>
+  <article class="card">
+    <img src="img/n8n-fix.png" alt="Reparación de flujos de n8n" loading="lazy">
+    <div class="body">
+      <h3><span data-es>Reparación de flujos de n8n</span><span data-en>n8n workflow fixing</span></h3>
+      <p data-es>Encuentro por qué falla un flujo, arreglo la causa y agrego reintentos y alertas para que no vuelva a fallar en silencio.</p>
+      <p data-en>I find why a workflow fails, fix the cause and add retries and alerts so it stops failing silently.</p>
+      <div class="tags"><span class="tag">n8n</span><span class="tag">APIs</span><span class="tag">Debugging</span></div>
+    </div>
+  </article>
+</div>
+
+<h2><span data-es>Código abierto y herramientas</span><span data-en>Open source and tools</span></h2>
+<p class="sub"><span data-es>Repositorios públicos en GitHub.</span><span data-en>Public repositories on GitHub.</span></p>
+<div class="grid">
+  <article class="card"><div class="body">
+    <h3>pdf-surgeon</h3>
+    <p data-es>Plugin para Hermes que corrige un texto dentro de un PDF propio reescribiendo el flujo de contenido de la página, sin tapar ni cambiar la tipografía.</p>
+    <p data-en>Hermes plugin that fixes text inside your own PDF by rewriting the page content stream, with no visible edit and no font change.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">PDF</span></div>
+    <div class="cl"><a href="https://github.com/Samuek9/pdf-surgeon">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3>PDF2Emails</h3>
+    <p data-es>Micro-SaaS que extrae correos de un PDF dentro del navegador, sin subir el archivo. Filtra, exporta a CSV y cobra con precios por paridad de poder adquisitivo.</p>
+    <p data-en>Micro-SaaS that extracts emails from a PDF inside the browser, without uploading the file. Filters, exports to CSV and prices by purchasing power parity.</p>
+    <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">PayPal</span></div>
+    <div class="cl"><a href="https://pdf2emails.vercel.app">Demo</a><a href="https://github.com/Samuek9/pdf2emails">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3>Golazo Millonario</h3>
+    <p data-es>Aplicación web en Flask desplegada en Vercel, publicada como Golazo Millonario 2026.</p>
+    <p data-en>Flask web app deployed on Vercel, published as Golazo Millonario 2026.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Vercel</span></div>
+    <div class="cl"><a href="https://golazo-millonario.vercel.app">Demo</a><a href="https://github.com/Samuek9/golazo-millonario">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3>Torneo Xanders TV</h3>
+    <p data-es>Aplicación web de inscripción a un streaming deportivo, en Flask y desplegada en Vercel.</p>
+    <p data-en>Registration web app for a sports streaming event, built with Flask and deployed on Vercel.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Vercel</span></div>
+    <div class="cl"><a href="https://torneo-xanderstv.vercel.app">Demo</a><a href="https://github.com/Samuek9/torneo-xanderstv">GitHub</a></div>
+  </div></article>
+</div>
+
+<h2><span data-es>Modelación y simulación</span><span data-en>Modeling and simulation</span></h2>
+<p class="sub"><span data-es>Trabajos de la universidad y análisis financiero.</span><span data-en>University work and financial analysis.</span></p>
+<div class="grid">
+  <article class="card"><div class="body">
+    <h3>Investment Lab</h3>
+    <p data-es>Simulador de eventos discretos que compara cuatro estrategias para 700 millones de pesos a diez años: cuenta remunerada, CDT, ETF iCOLCAP y un apartamento en arriendo. Todos los parámetros salen de una hoja de Excel, ninguno está escrito en el motor.</p>
+    <p data-en>Discrete-event simulator that compares four strategies for COP 700 million over ten years: savings account, CD, the iCOLCAP ETF and a rental apartment. Every parameter comes from an Excel sheet, none is hard-coded in the engine.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Excel</span></div>
+    <div class="cl"><a href="https://github.com/Samuek9/trabajo-final-simulacion">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3><span data-es>¿Es rentable un apartamento para arrendar?</span><span data-en>Is a rental apartment profitable?</span></h3>
+    <p data-es>Simulación Monte Carlo de ingresos, gastos y flujo neto de un apartamento durante 12 meses, con una app en Streamlit para cambiar los parámetros.</p>
+    <p data-en>Monte Carlo simulation of a rental apartment's income, costs and net cash flow over 12 months, with a Streamlit app to change the parameters.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Monte Carlo</span><span class="tag">Streamlit</span></div>
+    <div class="cl"><a href="https://github.com/Samuek9/simulador-apartamento">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3><span data-es>Vaciado de un tanque cónico</span><span data-en>Conical tank draining</span></h3>
+    <p data-es>Simulador interactivo que compara la solución analítica con el método de Euler, con una animación sincronizada al tiempo físico del modelo.</p>
+    <p data-en>Interactive simulator comparing the analytical solution with the Euler method, with an animation synced to the model's physical time.</p>
+    <div class="tags"><span class="tag">TypeScript</span><span class="tag">Euler</span></div>
+    <div class="cl"><a href="https://tanque-conico-simulador.vercel.app">Demo</a><a href="https://github.com/Samuek9/tanque-conico-simulador">GitHub</a></div>
+  </div></article>
+  <article class="card"><div class="body">
+    <h3><span data-es>Modelos financieros en Excel</span><span data-en>Excel financial models</span></h3>
+    <p data-es>Proyecto freelance en Upwork: modelos de ingresos, costos y escenarios, con proyecciones a 12 meses y a cinco años.</p>
+    <p data-en>Freelance project on Upwork: revenue, cost and scenario models with 12-month and five-year projections.</p>
+    <div class="tags"><span class="tag">Excel</span><span class="tag">Upwork</span></div>
+  </div></article>
+</div>
+
+<h2><span data-es>Trayectoria</span><span data-en>Background</span></h2>
+<ul class="tl" style="margin-top:14px">
+  <li><b><span data-es>Fundador | miCANTERA</span><span data-en>Founder | miCANTERA</span></b><small><span data-es>Enero de 2026 a la fecha</span><span data-en>January 2026 to present</span></small></li>
+  <li><b><span data-es>Intercambio en Administración Internacional | Hochschule Kempten, Alemania (beca DAAD)</span><span data-en>Exchange in International Management | Hochschule Kempten, Germany (DAAD scholarship)</span></b><small><span data-es>Agosto de 2025 a julio de 2026</span><span data-en>August 2025 to July 2026</span></small></li>
+  <li><b><span data-es>Productor audiovisual | Fútbol 360 Producciones</span><span data-en>Audiovisual Producer | Fútbol 360 Producciones</span></b><small><span data-es>Abril a septiembre de 2025</span><span data-en>April to September 2025</span></small></li>
+  <li><b><span data-es>Cofundador y responsable de operaciones | Trenbros</span><span data-en>Co-founder and Operations Manager | Trenbros</span></b><small><span data-es>Noviembre de 2023 a septiembre de 2024. Tienda de ropa deportiva en Shopify.</span><span data-en>November 2023 to September 2024. Sportswear store on Shopify.</span></small></li>
+  <li><b><span data-es>Ingeniería Administrativa | Universidad Pontificia Bolivariana</span><span data-en>Management Engineering | Universidad Pontificia Bolivariana</span></b><small><span data-es>2022 a 2027 (grado previsto). Beca del 100 % por mérito académico.</span><span data-en>2022 to 2027 (expected). 100% merit-based scholarship.</span></small></li>
+</ul>
+
+<h2><span data-es>Herramientas</span><span data-en>Tools</span></h2>
+<div class="tags" style="margin-top:14px">
+  <span class="tag">n8n</span><span class="tag">REST APIs</span><span class="tag">Webhooks</span><span class="tag">WhatsApp Business</span><span class="tag">Chatwoot</span><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Django</span><span class="tag">React</span><span class="tag">Excel</span><span class="tag">Shopify</span><span class="tag">Claude</span><span class="tag">ChatGPT</span>
+</div>
+</main>
+
+<footer>
+  <span data-es>Español nativo, inglés B2, alemán A2. Medellín, Colombia.</span>
+  <span data-en>Native Spanish, English B2, German A2. Medellín, Colombia.</span>
+  · <a href="mailto:samuelvasquez0804@gmail.com">samuelvasquez0804@gmail.com</a>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById("lang"),h=document.documentElement,s=null;
+  function set(l){h.lang=l;b.textContent=l==="es"?"EN":"ES";try{localStorage.setItem("lang",l)}catch(e){}}
+  try{s=localStorage.getItem("lang")}catch(e){}
+  if(!s)s=(navigator.language||"es").slice(0,2)==="es"?"es":"en";
+  set(s);
+  b.addEventListener("click",function(){set(h.lang==="es"?"en":"es")});
+})();
+</script>
+</body>
+</html>
